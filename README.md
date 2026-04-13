@@ -15,5 +15,5 @@ All HF bands QRP CW transceiver. This is an improved version of [HBR/3B](https:/
 
 Links:
 
-* Article (in Russian): https://eax.me/hbr-8b-transceiver/
+* Article (in Russian): https://eax.me/2023/2023-02-13-hbr-8b-transceiver.html
 * Demo: https://www.youtube.com/watch?v=GlcS9r8nLz4
