@@ -141,7 +141,7 @@ flowchart LR
 
 **Deferred to Implementation**
 
-- Se `pcb import` sul file convertito produca moduli riusabili o solo una base da riscrivere: si decide in U4, sul blocco pilota, confrontando l'output con un modulo scritto a mano.
+- ~~Se `pcb import` produca moduli riusabili~~ **Risolto in esecuzione: i blocchi si scrivono a mano.** Provato sul foglio convertito del BFO: l'importazione produce un file di dieci righe con la sola dichiarazione della board e nessun componente, fermandosi su «Part group … has PCB footprints but no schematic symbol instances». Verificato che la causa è l'impronta: assegnando un'impronta valida ai 64 componenti che ne erano privi, l'errore si sposta sul gruppo dei 2N3904, la cui impronta non esiste nelle librerie di KiCad 10. `pcb import` richiede quindi che **ogni** componente abbia un'impronta risolvibile — cioè il lavoro di layout che R14 esclude, fatto per giunta in blocco per far passare un comando.
 - Quali modelli SPICE adottare per `PA0184NL` e per i toroidi FT50-43, e se un modello ideale dichiarato basti per gli stadi di R9.
 - Quale configurazione LiPo fissare come rail di riferimento (due o tre celle), da decidere prima del budget della catena TX in U8.
 
