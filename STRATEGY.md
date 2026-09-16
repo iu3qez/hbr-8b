@@ -20,6 +20,7 @@ Reuse piuttosto che rifare: le funzioni commodity (clock, MCU, amplificatore aud
 ## Boundaries
 
 - Solo CW: niente SSB né modi digitali.
+- Tutte e otto le bande restano: ridurre la copertura non è una semplificazione ammessa, nemmeno quando i banchi di filtri risultano la parte più ingombrante.
 - Display definitivo rimandato alla fase 2; in fase 1 display volante.
 - HBR/8B upstream è una base, non la specifica: le sue scelte si tengono solo se passano i criteri sopra.
 
