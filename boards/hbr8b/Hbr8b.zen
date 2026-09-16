@@ -1,0 +1,30 @@
+"""Composizione dei blocchi di HBR/8B.
+
+Scheletro: i blocchi vengono aggiunti man mano che passano il confronto con lo
+schema upstream (docs/plans/2026-09-16-1345-feat-blocchi-e-zener-plan.md, U4-U8).
+Ogni blocco da confrontare vive sotto blocchi/ come board a sé, perché
+`pcb apply schematic` scrive il .kicad_sch solo per un file che dichiara
+Board(...) — su un modulo esce con codice zero senza scrivere nulla (KTD2).
+
+I blocchi a sola interfaccia (audio, S-meter, sidetone, MCU, clock, display,
+alimentazione) non hanno circuito qui: compaiono come net al confine, con i
+limiti ammessi scritti in docs/blocchi.md (R3b, R7).
+"""
+
+GND = Ground()
+
+# Confini verso i blocchi a sola interfaccia (R7): nessun circuito, solo il nome
+# del segnale, così che il documento e il sorgente nominino le stesse cose.
+ANT = Net("ANT", impedance="50ohm")
+AFAMP_IN = Net("AFAMP_IN")
+S_METER_OUT = Net("S_METER_OUT")
+PWR_FWD = Net("PWR_FWD")
+PWR_REF = Net("PWR_REF")
+ENABLE_TX = Net("ENABLE_TX")
+ENABLE_CW_TONE = Net("ENABLE_CW_TONE")
+
+Board(
+    name="hbr8b",
+    layout_path="layout",
+    layers=2,
+)

@@ -1,0 +1,8 @@
+[board]
+name = "hbr8b"
+path = "Hbr8b.zen"
+description = "Composizione dei blocchi del transceiver HF CW: catena RX, catena TX, filtri, BFO. I blocchi da confrontare con lo schema upstream sono board a sé sotto blocchi/."
+
+[dependencies]
+components = "0.1.0"
+modules = "0.1.0"
