@@ -17,3 +17,4 @@ fp-info-cache
 
 __pycache__/
 *.pyc
+*.kicad_prl
