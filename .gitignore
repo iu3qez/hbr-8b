@@ -1,1 +1,20 @@
 *.swp
+.DS_Store
+
+# Cache della toolchain pcb/Zener: si rigenera da sola, 36 MB di dipendenze.
+.pcb/
+build/
+*.log
+*netlist.json
+*layout.json
+
+# Progetti KiCad generati da `pcb apply schematic` per il confronto: artefatti
+# derivati dal sorgente Zener, non sorgenti (R14 — nessun layout in questa fase).
+boards/**/layout/
+fp-info-cache
+*.lck
+*-backups/
+
+__pycache__/
+*.pyc
+*.kicad_prl

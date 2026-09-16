@@ -1,0 +1,6 @@
+[workspace]
+name = "hbr-8b"
+pcb-version = "0.4"
+# Lo schema legacy KiCad 5 e la sua conversione non sono sorgenti Zener:
+# fuori dallo scan del workspace.
+exclude = [".claude", "schematic", "firmware", "enclosure"]

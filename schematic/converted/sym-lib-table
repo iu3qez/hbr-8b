@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "hbr-8b-cache") (type "Legacy") (uri "/Users/sf/Developer/hbr-8b/schematic/converted/hbr-8b-cache.lib") (options "") (descr "Libreria cache progetto obsoleto"))
+)
